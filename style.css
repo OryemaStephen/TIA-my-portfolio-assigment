@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  letter-spacing: 0.5px;
+}
+
+.sidenav {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #747675;
+  position: fixed;
+  height: 100%;
+}
+
+.sidenav li a {
+  display: block;
+  font-size: 1.3em;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+.sidenav li a:hover {
+  background-color: #555;
+  color: #000;
+}
+
+main{
+  margin-left: 20%;
+  padding: 1px 10px;
+  height: fit-content;
+  background-color: #2f2f2f;
+  color: #fff;
+  text-align: left;
+  
+}
+
+.content{
+  width: 100%;
+  height: fit-content;
+  padding: 10px 10px;
+}
+
+#profile-pic img{
+  width: 400px;
+  border-radius: 50%;
+  height: auto;
+  object-fit: cover;
+  padding: 10px;
+}
+
+footer{
+  margin-left: 20%;
+  padding: 20px;
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+footer a{
+  color: #c5c5c5;
+}
+
+footer a:hover{
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+               
+     .sidenav {
+        width: 100%;
+        height: auto;
+        position: fixed;
+    }
+    
+    .sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    
+    main {
+        margin-left: 0;
+        height: fit-content;
+    }
+
+    #home, #about, #portfolio{
+      padding-top: 40px;
+    }
+
+    footer{
+      margin-left: 0;
+      text-align: center;
+    }
+}

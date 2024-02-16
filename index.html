@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <ul class="sidenav" id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <!-- Home -->
+        <section class="content" id="home">
+            <div id="home-container">
+                <div id="profile-desc">
+                    <h3>Hello, I am</h3>
+                    <h1>Stephen Oryema.</h1>
+                    <p>
+                        A fullstack web developer with 2 years experience in 
+                        JavaScript and Python.
+                    </p>
+                    <p>
+                        I am currently learning Node.js.
+                    </p>
+                </div>
+                <div id="profile-pic">
+                    <img src="https://oryemasteph.netlify.app/homepage.jpg" alt="My photo">
+                </div>
+            </div>
+        </section>
+        
+        <!-- About -->
+        <section class="content" id="about">
+            <div id="about-me">
+                <div id="background">
+                    <h1>About me</h1>
+                    <p>
+                        Back in 2020, I decided to try my hand at programming and tumbled head 
+                        first into the rabbit hole of coding and web development. I learnt under the guidance of one of my friends
+                        who is a professional software engineer. I learnt the basics of HTML, CSS and JavaScript, 
+                        worked on a few basic personal projects for practice. I proceeded to learning React.js and React Native,
+                        I found React Native more fun and easier to understand, used it to build a nice looking
+                        UI of a rental mobile app that I had intended to be my startup.
+                    </p>
+                    <p>
+                        Fast-forward to 2022, I got a job as a hydrogeologist, carrying out groundwater 
+                        siting, drilling supervision, casing installation and development, and well testing.I abandoned programming and started learning Data analytics using Python,
+                        Excel, Power BI and SQL. This was because of the demand for data analysis skills at my the job.
+                    </p>
+
+                    <p>
+                        It's now 2024, I have come back to programming after realising, it is my paasion that I dont want to go to waste.
+                        This time I have made a commitment to take it more serious and make it a career as a fullstack web development.
+                        To keep this commitment, I paid for Tunga Impact Academy training and I am currently enjoying the learning.
+                        I have learnt the basics of HTML, CSS and JavaScript, working on some projects and then I will proceed to 
+                        learn Node.js, MySQL and Express.js. I have been working on a restaurant web application, <a href="https://eatup256.netlify.app" target="_blank">EatUp</a> where the customers can see through the menu and order food. I keep adding new features with my learning. <i>I am ready for this.</i>
+                    </p>
+                </div>
+                <div id="work-experience">
+                    <h1>Work Experience</h1>
+                    <div id="exp-container">
+                        <div id="exp-year">
+                            <span>2024-present</span>
+                        </div>
+                        <div id="exp-description">
+                            <h3>Web development intern</h3>
+                            <p>Tunga</p>
+                            <p>
+                                I design websites using HTML and CSS and add interactivity of the site using JavaScript.
+                                I create the database using SQL and run it on a server using Node.js. I use Express.js to create the API.
+                            </p>
+                            <div>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio -->
+        <section class="content" id="portfolio">
+            <h2>Portfolio</h2>
+            <p>
+                This example use media queries to transform the sidenav 
+                to a top navigation bar when the screen size is 900px or less.
+            </p>
+            <p>
+                We have also added a media query for screens that are 400px or less, 
+                which will vertically stack and center the navigation links.
+            </p>
+            <p>
+                You will learn more about media queries and responsive 
+                web design later in our CSS Tutorial.
+            </p>
+            <h3>
+                Resize the browser window to see the effect.
+            </h3>
+        </section>        
+    </main>
+
+    <footer>
+        <span>&copy; <span id="year"></span> Developed by </span>
+        <a href="https://oryemasteph.netlify.app/" target="_blank">Stephen Oryema</a>
+    </footer>
+
+    <script>
+        // Smooth scroll behaviour
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        //Copyright year
+        let today = new Date()
+        document.getElementById('year').innerText = today.getFullYear();
+    </script>
+</body>
+</html>
