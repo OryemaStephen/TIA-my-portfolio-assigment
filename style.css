@@ -43,13 +43,22 @@ main{
 }
 
 .content{
-  width: 100%;
   height: fit-content;
   padding: 10px 10px;
 }
 
+#home-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#profile-desc{
+  width: 50%;
+}
+
 #profile-pic img{
-  width: 300px;
+  width: 330px;
   border-radius: 50%;
   height: auto;
   object-fit: cover;
@@ -137,6 +146,10 @@ footer a:hover{
 
     #home, #about, #portfolio{
       padding-top: 20px;
+    }
+
+    #profile-desc{
+      width: 100%;
     }
 
     .exp-container{
