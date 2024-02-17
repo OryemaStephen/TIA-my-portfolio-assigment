@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   overflow: auto;
   letter-spacing: 0.5px;
+  font-family: "Poppins";
 }
 
 .sidenav {
@@ -19,7 +20,7 @@ body {
 
 .sidenav li a {
   display: block;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
@@ -33,9 +34,9 @@ body {
 
 main{
   margin-left: 20%;
-  padding: 1px 10px;
+  padding: 1px 20px;
   height: fit-content;
-  background-color: #2f2f2f;
+  background-color: #272e47;
   color: #fff;
   text-align: left;
   
@@ -48,17 +49,62 @@ main{
 }
 
 #profile-pic img{
-  width: 400px;
+  width: 300px;
   border-radius: 50%;
   height: auto;
   object-fit: cover;
   padding: 10px;
 }
 
+#experience{
+  width: 100%;
+}
+
+.exp-container{
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp-year{
+  width: 250px;
+}
+
+#my-project{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project{
+  margin: 10px auto;
+  border: 2px solid #3f3c52;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project:hover{
+  opacity: 0.7;
+}
+
+.project img{
+  width: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+
+}
+main a{
+  color: #4ec9cb;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
 footer{
   margin-left: 20%;
   padding: 20px;
-  background-color: #2f2f2f;
+  background-color: #747675;
   color: #fff;
 }
 
@@ -76,6 +122,7 @@ footer a:hover{
         width: 100%;
         height: auto;
         position: fixed;
+        z-index: 99;
     }
     
     .sidenav li a {
@@ -89,7 +136,12 @@ footer a:hover{
     }
 
     #home, #about, #portfolio{
-      padding-top: 40px;
+      padding-top: 20px;
+    }
+
+    .exp-container{
+      display: block;
+      padding-top: 20px;
     }
 
     footer{

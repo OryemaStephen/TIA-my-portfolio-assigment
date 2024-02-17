@@ -2,6 +2,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
 </head>
@@ -64,49 +67,75 @@
                 </div>
                 <div id="work-experience">
                     <h1>Work Experience</h1>
-                    <div id="exp-container">
-                        <div id="exp-year">
-                            <span>2024-present</span>
-                        </div>
-                        <div id="exp-description">
-                            <h3>Web development intern</h3>
-                            <p>Tunga</p>
-                            <p>
-                                I design websites using HTML and CSS and add interactivity of the site using JavaScript.
-                                I create the database using SQL and run it on a server using Node.js. I use Express.js to create the API.
-                            </p>
-                            <div>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Node.js</span>
-                                <span>Express.js</span>
-                                <span>MySQL</span>
+                    <div id="experience">
+                        <div class="exp-container">
+                            <div class="exp-year">
+                                <span>Jan, 2024-present</span>
                             </div>
-                        </div>
-                    </div>
+                            <div class="exp-description">
+                                <h3>Fullstack Web development intern</h3>
+                                <p>Tunga</p>
+                                <p>
+                                    I design websites using HTML and CSS and add interactivity of the site using JavaScript.
+                                    I create the database using SQL and run it on a server using Node.js. I use Express.js to create the API.
+                                </p>
+                                <div>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Node.js</span>
+                                    <span>Express.js</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>                        
+                        </div> 
+                        <div class="exp-container">
+                            <div class="exp-year">
+                                <span>Jun, 2023 - Present</span>
+                            </div>
+                            <div class="exp-description">
+                                <h3>Data Analyst intern</h3>
+                                <p>MeriSKILL</p>
+                                <p>
+                                    Carried out data collection, cleaning, visualization and analysis 
+                                    using Python's libraries Pandas, Matplotlib, Seaborn and Numpy,  
+                                    Advanced excel tools such as Power Query. Microsoft Power BI and SQL to 
+                                    clean and visualize data as well as build dashboards.
+                                </p>
+                                <div>
+                                    <span>Python</span>
+                                    <span>Microsoft Power BI</span>
+                                    <span>Advanced Excel</span>
+                                    <span>SQL</span>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>            
                 </div>
-            </div>
         </section>
         
         <!-- Portfolio -->
         <section class="content" id="portfolio">
-            <h2>Portfolio</h2>
-            <p>
-                This example use media queries to transform the sidenav 
-                to a top navigation bar when the screen size is 900px or less.
-            </p>
-            <p>
-                We have also added a media query for screens that are 400px or less, 
-                which will vertically stack and center the navigation links.
-            </p>
-            <p>
-                You will learn more about media queries and responsive 
-                web design later in our CSS Tutorial.
-            </p>
-            <h3>
-                Resize the browser window to see the effect.
-            </h3>
+            <h2>My Projects</h2>
+            <div id="my-project">
+                <div class="project">
+                    <img src="restaurant.png" alt="Form input assignment">
+                    <h4>Restaurant Website Project</h4>
+                    <a href="#">GitHub</a>
+                </div>
+                
+                <div class="project">                
+                    <img src="form-assignment.png" alt="Form input assignment">
+                    <h4>Form Data Project</h4>
+                    <a href="#">GitHub</a>
+                </div>
+                
+                <div class="project">
+                    <img src="programming-language.png" alt="Form input assignment">
+                    <h4>Programing Language Project</h4>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
         </section>        
     </main>
 
