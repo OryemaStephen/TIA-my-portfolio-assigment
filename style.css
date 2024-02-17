@@ -39,6 +39,7 @@ main{
   background-color: #272e47;
   color: #fff;
   text-align: left;
+  background-image: linear-gradient(to bottom, #687791, #0B1D3A);
   
 }
 
@@ -57,13 +58,24 @@ main{
   width: 60%;
 }
 
+.profile-contact{
+  width: 50%;
+}
+
+#profile-contact-img{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
 #profile-pic img{
-  width: 330px;
-  border-radius: 50%;
+  width: 300px;
   height: auto;
+  border-radius: 50%;
   object-fit: cover;
   padding: 10px;
 }
+
 
 #experience{
   width: 100%;
@@ -90,8 +102,14 @@ main{
 .project{
   margin: 10px auto;
   border: 2px solid #3f3c52;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+.project a:hover{
+  color: #fff;
 }
 
 .project:hover{
@@ -100,8 +118,10 @@ main{
 
 .project img{
   width: 300px;
-  object-fit: contain;
-  border-radius: 10px;
+  height: 350px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
 }
 main a{
@@ -125,7 +145,7 @@ footer a:hover{
   color: #fff;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
                
      .sidenav {
         width: 100%;
@@ -144,12 +164,20 @@ footer a:hover{
         height: fit-content;
     }
 
+    .content{
+      padding: 10px;
+    }
+
     #home, #about, #portfolio{
-      padding-top: 20px;
+      padding-top: 50px;
     }
 
     #profile-desc{
       width: 100%;
+    }
+
+    .project img{
+      width: 400px;
     }
 
     .exp-container{
