@@ -108,8 +108,20 @@ main{
   padding-bottom: 20px;
 }
 
+.project a{
+  display: inline-block;
+  width: 130px;
+  color: #000;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #747675;
+  border-radius: 5px;
+}
+
 .project a:hover{
   color: #fff;
+  background-color: #464747;
+  border: none;
 }
 
 .project:hover{
