@@ -130,6 +130,21 @@ main a{
   text-decoration: none;
 }
 
+.skills{
+  width: auto;
+}
+
+.skills span{
+  width: 150px;
+  border: 1px solid #747675;
+  background-color: #747675;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
 footer{
   margin-left: 20%;
   padding: 20px;
